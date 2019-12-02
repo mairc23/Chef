@@ -1,0 +1,187 @@
+/*---------- ESTILO DE LA PANTALLA DE INICIO ----------*/
+
+.fondo {
+	/* FONDO */
+	background-image: url(../FondoInicial/cook.jpg);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	background-blend-mode: soft-light;
+	/* TEXTO (centreado) */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+}
+
+/* -------------- CABECERA ----------------- */
+
+#sub .dropdown-item {
+	color: white;
+}
+
+	#sub .dropdown-item:hover {
+		background-color: rgba(0, 0, 0, 0.3);
+		background-blend-mode: soft-light;
+		color: white;
+	}
+
+/*------------------------------------------*/
+
+/* ------- DEGRADADO DE LA CABECERA ------- */
+
+.navbar {
+	font-family: 'Asap Condensed', sans-serif;
+	font-size: 13px;
+}
+
+.top-nav-collapse {
+	background: #ef5350 !important;
+}
+
+.top-nav-collapse #sub{
+	background: #ef5350;
+}
+
+	.top-nav-collapse #sub a{
+		color: white;
+	}
+
+	.top-nav-collapse #sub a:hover {
+		background-color: #ef5350;
+		color: #212121;
+	}
+
+/* --------------------------------------- */
+
+main {
+	margin-top: 5rem;
+}
+
+.right {
+	padding-top: 2em;
+	padding-left: 3em;
+	padding-right: 3em;
+}
+
+.left-1 img {
+	padding: 5rem;
+}
+
+#testimonial {
+	background: #f5f5f5;
+	font-family: 'Asap Condensed', sans-serif;
+	font-size: 20px;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+footer {
+	font-family: 'Asap Condensed', sans-serif;
+	margin-top: 10rem;
+}
+
+#pie {
+	font-family: 'Asap Condensed', sans-serif;
+	margin-top: 0;
+}
+
+.redsocial {
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+	.fa-facebook-f, .fa-twitter, .fa-instagram, .fa-youtube, .fa-pinterest {
+		margin: 5px;
+		
+	}
+
+/*-----------------------------------------------------*/
+
+
+/*---------- ESTILO DE LA PANTALLA DE BIOGRAFIA ----------*/
+
+#esp {
+	margin-top: 10rem;
+}
+
+#plato {
+	width: 60rem;
+}
+
+/*-------------------------------------------------------*/
+
+/*---------- ESTILO DE LA PANTALLA GALERIA ----------*/
+
+#galery {
+	margin-top: 10rem;
+}
+
+/*---------------------------------------------------*/
+
+/*---------- ESTILO DE LA PANTALLA DE RECETAS ----------*/
+
+#pn {
+	margin-top: 10em;
+}
+td img {
+	width: 70rem;
+}
+#footer-n {
+	margin-top: 100px;
+}
+
+/*------------------------------------------------------*/
+
+/*---------- ESTILO DE LA PANTALLA DE RECETAS ----------*/
+
+#pn img {
+	width: 30rem;
+}
+
+/*------------------------------------------------------*/
+
+.ni {
+	background: #f5f5f5;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+/* ---------- ESTILO CALCULADORA --------------------*/
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+
+/* ------------------------------------------------- */
+
+@media only screen and (max-width: 362px){
+
+
+}
+
+@media only screen and (max-width: 414px){
+
+
+}
+
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}

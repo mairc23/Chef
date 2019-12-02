@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Calculadora de Calorias</title>
+  <!-- TIPO DE FUENTE -->
+  <link href="https://fonts.googleapis.com/css?family=Asap+Condensed&display=swap" rel="stylesheet">
+  <!-- ICONO -->
+  <link rel="icon" href="IconSushi.png">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- SCROOLL REVEAL JS LIBRARY CDN -->
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+
+  <script>
+    
+    window.sr = ScrollReveal();
+
+    sr.reveal('.navbar', {
+      duration: 2000,
+      origin: 'bottom'
+    });
+
+  </script>
+</head>
+<body>
+ 
+  <header>
+      <!----------------- MENU ------------------->
+      <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar fixed-top red lighten-1">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="IconSushi.png" height="40" alt="Comida Sana"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Chef</a>
+                    <ul id="sub" class="dropdown-menu rgba-black-strong">
+                  <a class="dropdown-item" href="biografia.html">Chef y Mas...</a>
+                  <a class="dropdown-item" href="especialidad.html">Especialidad</a>
+                  <a class="dropdown-item" href="galeria.html">Fotos</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+                </ul>
+                    </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Recetas</a>
+                    <ul id="sub" class="dropdown-menu rgba-black-strong">
+                  <a class="dropdown-item" href="sushi.html">Sushi</a>
+                  <a class="dropdown-item" href="especiales.html">Especiales</a>
+                  <a class="dropdown-item" href="niños.html">Para Niños</a>
+                </ul>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="cotizacion.html">Galeria de Servicios Ofrecidos y Cotización</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="calculadora.html">Calcular Calorias</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+  </header>
+
+  <div class="hey">
+
+    <div id="pn" class="container">
+        
+        <p class="h6">Para calcular las calorias primero necesitamos su peso(kg), altura(cm) edad y género.</p><br>
+
+        <div class="row">
+          <div class="col-md-5">
+            <div class="input-group">
+            <input class="form-control" type="number" placeholder="peso (kg)" id="peso">
+            <input class="form-control" type="number" placeholder="altura (cm)" id="altura">
+            <input class="form-control" type="number" placeholder="edad" id="edad">
+        </div><br>
+          </div>
+        </div>
+
+        <p class="h6">Género:</p><br>
+
+        <form name="nowhere">
+          <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" name="genero" class="custom-control-input" id="pm" value="1">
+              <label class="custom-control-label" for="pm">Masculino</label>
+          </div>
+
+          <div class="custom-control custom-radio custom-control-inline">
+              <input type="radio" name="genero" class="custom-control-input" id="pf" value="2">
+              <label class="custom-control-label" for="pf">Femenino</label>
+          </div><br><br><br>
+
+          <button class="btn btn-danger" id="calculo">Calcular Calorias</button><br><br>
+        </form>
+
+        <div class="row">
+          <div class="col-md-3">
+            <table class="table table-bordered">
+              <tbody id="col1">
+                <tr>
+                  <td id="col"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div><br>
+
+    <div class="container">
+      <p class="font-weight-bold h4">EJEMPLO DE TABLA DE ALIMENTOS</p><br>
+    </div>
+
+    <!-- LISTAS -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+              <table class="table table-bordered">
+                <thead class="thead-dark">
+                  <tr>
+                    <th colspan="5">Cereales y Tubércolos</th>
+                  </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                   <td>Arroz blanco cocido</td>
+                   <td>½ taza</td>
+                   <td>70 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Tortilla de maiz</td>
+                   <td>1 pieza</td>
+                   <td>70 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Bolillo sin migajón</td>
+                   <td>½ pieza</td>
+                   <td>70 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Pan de caja (Blanco o integral)</td>
+                   <td>½ pieza</td>
+                   <td>70 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Pasta hervida</td>
+                   <td>½ pieza</td>
+                   <td>70 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Cereal con azúcar</td>
+                   <td>½ taza</td>
+                   <td>70 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Papa (Hervida o al horno)</td>
+                   <td>½ pieza</td>
+                   <td>70 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Galleta maría</td>
+                   <td> 5 piezas</td>
+                   <td>70 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Pan dulce (Cuernito, concha)</td>
+                   <td> 1 peiza</td>
+                   <td>115 kcal.</td>
+                 </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-md-4">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                  <tr>
+                    <th colspan="5">Verduras</th>
+                  </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                   <td>Jitomate bola</td>
+                   <td>1 pieza</td>
+                   <td>25 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Cebolla blanca cruda</td>
+                   <td>½ taza</td>
+                   <td>25 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Chile de árbol</td>
+                   <td>4 piezas</td>
+                   <td>25 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Zanahoria cruda</td>
+                   <td>½ taza</td>
+                   <td>25 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Calabacita cocida</td>
+                   <td>½ taza</td>
+                   <td>25 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Chayote cocido</td>
+                   <td>½ pieza</td>
+                   <td>25 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Espinaca cruda</td>
+                   <td>2 tazas</td>
+                   <td>25 kcal.</td>
+                 </tr>
+                </tbody>
+              </table>
+
+            </div>
+            <div class="col-md-4">
+            <table class="table table-bordered">
+                <thead class="thead-dark">
+                  <tr>
+                    <th colspan="5">Leguminosas</th>
+                  </tr>
+                </thead>
+                <tbody>
+                 <tr>
+                   <td>Frijol</td>
+                   <td>½ taza</td>
+                   <td>120 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Garbanzo</td>
+                   <td>½ taza</td>
+                   <td>120 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Habas</td>
+                   <td>½ taza</td>
+                   <td>120 kcal.</td>
+                 </tr>
+                 <tr>
+                   <td>Lentejas</td>
+                   <td>½ taza</td>
+                   <td>120 kcal.</td>
+                 </tr>
+                </tbody>
+              </table>
+
+            </div>
+
+          </div>
+    </div>
+
+  </div>
+
+
+
+  <!----- COPYRIGHT ----->
+  <footer class="page-footer font-small">
+      <div class="footer-copyright text-center py-5 red darken-1">
+        <div class="redsocial">
+          <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item">
+                <a href="https://www.facebook.com/toshirokonishiachicaprecio/" target="-blank" class="nav-link">
+                  <i class="fab fa-facebook-f fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item">
+                <a href="https://twitter.com/toshirokonishi" target="-blank" class="nav-link">
+                  <i class="fab fa-twitter fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item">
+                <a href="https://www.instagram.com/toshi_nikkei/" target="-blank" class="nav-link">
+                  <i class="fab fa-instagram fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item">
+                <a href="https://www.youtube.com/watch?v=7jErT7CaJ88" target="-blank" class="nav-link">
+                  <i class="fab fa-youtube fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav nav-flex-icons">
+              <li class="nav-item">
+                <a href="https://www.pinterest.com/toshinikkei/" target="-blank" class="nav-link">
+                  <i class="fab fa-pinterest fa-2x"></i>
+                </a>
+              </li>
+            </ul>
+          </div><br><br>
+
+        <strong> Copyright &copy; 2019 <a href="https://github.com/andvary23" target="_black"> mairc23 </a>Todos los Derechos Reservados.</strong>
+
+      </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Extención para documento JAVASCRIPT -->
+  <script src="js/main.js"></script>
+
+  <script>
+        
+  window.sr = ScrollReveal();
+
+    sr.reveal('.navbar', {
+      duration: 2000,
+      origin: 'bottom'
+    });
+
+    sr.reveal('.hey', {
+      duration: 3000,
+      origin: 'left',
+      distance: '300px'
+    });
+
+  </script>
+
+</body>
+</html>
